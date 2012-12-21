@@ -87,7 +87,7 @@
 
         var fields = path.split(separator);
         var result = obj;
-        for (var i = 0, n = fields.length; i < n && result !== undefined ; i++) {
+        for (var i = 0, n = fields.length; i < n && result !== undefined && result !== null ; i++) {
             var field = fields[i];
 
             //If the last in the path, set the value
